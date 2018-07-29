@@ -12,9 +12,4 @@ public class NewPlayerProfileName extends AppCompatActivity {
     }
 
 
-
-
-
-    
-
 }
