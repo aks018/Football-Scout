@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Football Scout</string>
+    <string name="menu_item_1">New Player Profile</string>
+    <string name="menu_item_2">Saved Player Profiles</string>
+    <string name="menu_item_3">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string-array name="listArray">
+        <item>Headings</item>
+        <item>Headings and Details</item>
+        <item>All Data</item>
+    </string-array>
+
+    <string-array name="listValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>
