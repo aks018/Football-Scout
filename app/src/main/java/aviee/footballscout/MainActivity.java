@@ -16,14 +16,18 @@ import aviee.footballscout.adapter.MainMenuAdapter;
 import aviee.footballscout.pojo.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
-
+    String currentNewPlayerName;
+    SharedPreferences SP;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        SP = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
 
-        myPreferences();
+
+        getMyPreferences();
+        setMyPreferences();
     }
 
     public void goToSettings(View view) {
@@ -31,11 +35,17 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void myPreferences(){
-        SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+    public void setMyPreferences() {
+        currentNewPlayerName = SP.getString(getResources().getString(R.string.currentNewPlayerName), "");
+        SP.edit().putString(currentNewPlayerName, "");
+
+
+    }
+
+    public void getMyPreferences() {
         String strUserName = SP.getString("username", "NA");
-        boolean bAppUpdates = SP.getBoolean("applicationUpdates",false);
-        String downloadType = SP.getString("downloadType","1");
+        boolean bAppUpdates = SP.getBoolean("applicationUpdates", false);
+        String downloadType = SP.getString("downloadType", "1");
     }
 
     public void goToNewPlayerProfileSetup(View view) {
