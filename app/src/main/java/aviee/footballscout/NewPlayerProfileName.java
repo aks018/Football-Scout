@@ -10,4 +10,11 @@ public class NewPlayerProfileName extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_player_profile_name);
     }
+
+
+
+
+
+    
+
 }
