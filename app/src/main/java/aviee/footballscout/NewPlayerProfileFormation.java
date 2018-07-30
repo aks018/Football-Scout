@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.SparseBooleanArray;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ExpandableListView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -47,7 +48,10 @@ public class NewPlayerProfileFormation extends AppCompatActivity {
         playerName = SP.getString(currentNewPlayerName, "");
         selectedFormations = getResources().getString(R.string.currentNewPlayerName);
         selectedSetFormations = SP.getStringSet(selectedFormations, new HashSet<String>());
+
     }
+
+
 
     public void cancelForm(View view) {
 

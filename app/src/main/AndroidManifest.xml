@@ -21,7 +21,8 @@
             android:label="@string/title_activity_settings" />
         <activity android:name=".NewPlayerProfileName" />
         <activity android:name=".NewPlayerProfileFormation" />
-        <activity android:name=".NewPlayerProfilePosition"></activity>
+        <activity android:name=".NewPlayerProfilePosition" />
+        <activity android:name=".adapter.MyCategoriesExpandableListAdapter"></activity>
     </application>
 
 </manifest>
