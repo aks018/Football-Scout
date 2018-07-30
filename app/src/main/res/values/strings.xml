@@ -38,6 +38,33 @@
         <item>5-3-2</item>
     </string-array>
 
+    <string-array name="positionperformation">
+        <item>GK</item>
+        <item>SW</item>
+        <item>LCB</item>
+        <item>RCB</item>
+        <item>CB</item>
+        <item>RB</item>
+        <item>LB</item>
+        <item>LWB</item>
+        <item>RWB</item>
+        <item>LM</item>
+        <item>RM</item>
+        <item>CCDM</item>
+        <item>LCM</item>
+        <item>CM</item>
+        <item>RCM</item>
+        <item>CAM</item>
+        <item>CF</item>
+        <item>RW</item>
+        <item>LW</item>
+        <item>RF</item>
+        <item>LF</item>
+        <item>ST</item>
+    </string-array>
+
+
     <string name="currentNewPlayerName">CurrentNewPlayerName</string>
+    <string name="selectedFormations">SelectedFormations</string>
 
 </resources>

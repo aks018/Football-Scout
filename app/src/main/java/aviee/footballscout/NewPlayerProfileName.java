@@ -67,7 +67,7 @@ public class NewPlayerProfileName extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int id) {
                         Intent intent = new Intent(NewPlayerProfileName.this, MainActivity.class);
                         startActivity(intent);
-                        SP.edit().putString("currentNewPlayerName", "");
+                        SP.edit().putString(getResources().getString(R.string.currentNewPlayerName), "");
                         dialog.cancel();
                     }
                 });
@@ -103,6 +103,6 @@ public class NewPlayerProfileName extends AppCompatActivity {
         intent.putExtra("playerName", playerName);
         startActivity(intent);
 
-        SP.edit().putString(currentNewPlayerName, playerName);
+        SP.edit().putString(getResources().getString(R.string.currentNewPlayerName), playerName);
     }
 }
