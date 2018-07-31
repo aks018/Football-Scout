@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewPlayerProfilePosition">
+    tools:context=".NewPlayerProfileReview">
 
     <ImageView
         android:layout_width="match_parent"
@@ -14,17 +14,6 @@
         android:layout_alignParentTop="true"
         android:scaleType="fitXY"
         android:src="@mipmap/soccerfield" />
-
-
-    <ExpandableListView
-        android:id="@+id/expandedListView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:childDivider="@color/Black"
-        android:layout_above="@+id/buttonCancel"
-        android:layout_margin="2.5dp"
-        android:divider="@null"
-        android:dividerHeight="0dp"/>
 
     <ImageButton
         android:id="@+id/buttonCancel"
@@ -50,4 +39,4 @@
         android:layout_alignParentRight="true"
         android:text="Button" />
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

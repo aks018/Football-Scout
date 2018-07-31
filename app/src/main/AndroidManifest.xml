@@ -22,7 +22,8 @@
         <activity android:name=".NewPlayerProfileName" />
         <activity android:name=".NewPlayerProfileFormation" />
         <activity android:name=".NewPlayerProfilePosition" />
-        <activity android:name=".adapter.MyCategoriesExpandableListAdapter"></activity>
+        <activity android:name=".adapter.MyCategoriesExpandableListAdapter" />
+        <activity android:name=".NewPlayerProfileReview"></activity>
     </application>
 
 </manifest>
