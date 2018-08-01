@@ -45,7 +45,7 @@ public class NewPlayerProfileFormation extends AppCompatActivity {
 
         SP = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
         currentNewPlayerName = getResources().getString(R.string.currentNewPlayerName);
-        playerName = SP.getString(currentNewPlayerName, "");
+        playerName = getIntent().getStringExtra("playerName");
         selectedFormations = getResources().getString(R.string.currentNewPlayerName);
         selectedSetFormations = SP.getStringSet(selectedFormations, new HashSet<String>());
 
@@ -110,7 +110,7 @@ public class NewPlayerProfileFormation extends AppCompatActivity {
         // Create a bundle object
         Bundle b = new Bundle();
         b.putStringArray("selectedFormations", outputStrArr);
-        b.putString("playerName", b.getString("playerName"));
+        b.putString("playerName", playerName);
         SP.edit().putStringSet(selectedFormations, new HashSet<String>(Arrays.asList(outputStrArr)));
 
         // Add the bundle to the intent.

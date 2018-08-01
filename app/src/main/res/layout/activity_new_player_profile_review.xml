@@ -1,42 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NewPlayerProfileReview">
 
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:scaleType="fitXY"
         android:src="@mipmap/soccerfield" />
 
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonCancel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:counterOverflowTextAppearance="@style/MyOverflowText"
+        app:errorTextAppearance="@style/MyErrorText">
+
+        <EditText
+            android:id="@+id/playerReviewEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter Player Description"
+            android:inputType="text"
+            android:gravity="top|left"
+            android:scrollHorizontally="true"
+            android:theme="@style/MyEditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
     <ImageButton
         android:id="@+id/buttonCancel"
-        android:src="@drawable/ic_cancel"
-        android:onClick="cancelForm"
         android:layout_width="50dp"
-        android:background="@drawable/round_button"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:text="Button" />
+        android:layout_alignParentStart="true"
+        android:background="@drawable/round_button"
+        android:onClick="cancelForm"
+        android:src="@drawable/ic_cancel"
+        android:text="Button"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="461dp" />
 
     <ImageButton
         android:id="@+id/buttonNext"
-        android:src="@drawable/ic_next"
-        android:onClick="nextPage"
         android:layout_width="50dp"
-        android:background="@drawable/round_button"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:text="Button" />
+        android:background="@drawable/round_button"
+        android:onClick="nextPage"
+        android:src="@drawable/ic_next"
+        android:text="Button"
+        tools:layout_editor_absoluteX="334dp"
+        tools:layout_editor_absoluteY="461dp" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

@@ -24,6 +24,7 @@ import java.util.Set;
 import aviee.footballscout.adapter.ConstantManager;
 import aviee.footballscout.adapter.MyCategoriesExpandableListAdapter;
 import aviee.footballscout.pojo.DataItem;
+import aviee.footballscout.pojo.Pair;
 
 public class NewPlayerProfilePosition extends AppCompatActivity {
 
@@ -206,40 +207,5 @@ public class NewPlayerProfilePosition extends AppCompatActivity {
 
     }
 
-    private class Pair implements Serializable {
 
-        private static final long serialVersionUID = 1L;
-
-        String formation;
-        String position;
-
-        public Pair(String position, String formation) {
-            this.formation = formation;
-            this.position = position;
-        }
-
-        public String getFormation() {
-            return formation;
-        }
-
-        public void setFormation(String formation) {
-            this.formation = formation;
-        }
-
-        public String getPosition() {
-            return position;
-        }
-
-        public void setPosition(String position) {
-            this.position = position;
-        }
-
-        @Override
-        public String toString() {
-            return "Pair{" +
-                    "formation='" + formation + '\'' +
-                    ", position='" + position + '\'' +
-                    '}';
-        }
-    }
 }

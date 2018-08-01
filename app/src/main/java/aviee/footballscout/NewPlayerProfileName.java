@@ -100,9 +100,10 @@ public class NewPlayerProfileName extends AppCompatActivity {
         }
 
         Intent intent = new Intent(this, NewPlayerProfileFormation.class);
+        SP.edit().putString(getResources().getString(R.string.currentNewPlayerName), playerName);
         intent.putExtra("playerName", playerName);
         startActivity(intent);
 
-        SP.edit().putString(getResources().getString(R.string.currentNewPlayerName), playerName);
+
     }
 }
