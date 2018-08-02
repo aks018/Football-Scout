@@ -55,6 +55,7 @@
         android:layout_centerInParent="true"
         android:background="@drawable/round_button"
         android:scaleType="fitXY"
+        android:contentDescription="@string/settingsImageButtonDescription"
         android:src="@mipmap/futbol"
         android:text="Settings" />
 
@@ -68,7 +69,6 @@
         android:layout_alignParentStart="true"
         android:fontFamily="sans-serif"
         android:layout_margin="2.5dp"
-
         android:text="New Player\nProfile"
         android:textColor="#000"
         android:textSize="18dp" />

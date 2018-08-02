@@ -50,7 +50,7 @@
         <item>RWB</item>
         <item>LM</item>
         <item>RM</item>
-        <item>CCDM</item>
+        <item>CDM</item>
         <item>LCM</item>
         <item>CM</item>
         <item>RCM</item>
@@ -63,6 +63,7 @@
         <item>ST</item>
     </string-array>
 
+    <string name="settingsImageButtonDescription">Click here to view settings</string>
 
     <string name="currentNewPlayerName">CurrentNewPlayerName</string>
     <string name="selectedFormations">SelectedFormations</string>
