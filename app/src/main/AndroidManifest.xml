@@ -26,7 +26,19 @@
         <activity android:name=".NewPlayerProfileFormation" />
         <activity android:name=".NewPlayerProfilePosition" />
         <activity android:name=".adapter.MyCategoriesExpandableListAdapter" />
-        <activity android:name=".NewPlayerProfileReview"></activity>
+        <activity android:name=".NewPlayerProfileReview" />
+
+        <provider
+            android:name=".GenericFileProvider"
+            android:authorities="aviee.footballscout.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".SavedPlayerProfiles"></activity>
     </application>
 
 </manifest>

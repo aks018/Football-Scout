@@ -52,4 +52,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, NewPlayerProfileName.class);
         startActivity(intent);
     }
+
+    public void goToSavedPlayerProfiles(View view) {
+        Intent intent = new Intent(this, SavedPlayerProfiles.class);
+        startActivity(intent);
+    }
 }
